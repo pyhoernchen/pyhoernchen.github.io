@@ -19,5 +19,11 @@
   "homepage": "https://github.com/pyhoernchen/pyhoernchen.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1"
+  },
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx eleventy",
+    "start": "npx eleventy --watch --serve"
   }
 }
