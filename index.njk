@@ -1,0 +1,42 @@
+---
+title: Homepage
+layout: layouts/base.njk
+---
+
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">{{ site.title }}</h1>
+      <h2 class="subtitle">{{ site.description }}</h2>
+    </div>
+  </div>
+</section>
+
+<section class="projectlist mt-3 pt-3">
+  <div class="container">
+    <h2 class="title has-text-centered mt-3 mb-6">Recent projects</h2>
+    <div class="columns">
+      {% for project in collections.project | reverse %}
+        {% if loop.index0 < 4 %}
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  {{ project.data.title }}
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  {{ project.data.description }}
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="{{ project.url }}" class="button is-fullwidth is-link card-footer-item">Read article</a>
+              </footer>
+            </div>
+          </div>
+          {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
