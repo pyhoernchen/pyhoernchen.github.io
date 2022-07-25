@@ -1,20 +1,116 @@
 <!DOCTYPE html>
+<html lang="en">
+
 
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" href="/style.css"/>
-  <title>My default title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Homepage</title>
 </head>
 
-<body>
-    <main>
-        <h1>Hello World!</h1>
-<p>This is a demo site.</p>
 
-    <hr/>
-    <small>A website by &lt;your name&gt; - &copy; 2022</small>
-    </main>
+<body>
+
+  <header><nav class="navbar is-light" role="navigation" aria-label="main navigation">
+  <div class="navbar-start">
+    <div class="navbar-item has-text-weight-bold">
+      My Eleventy Blog
+    </div>
+  </div>
+  <div class="navbar-end">
+    <a href="/" class="navbar-item">
+      Home
+    </a>
+
+    <a href="/about" class="navbar-item">
+      About Me
+    </a>
+  </div>
+</nav></header>
+
+  <main>
+    
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">My Eleventy Blog</h1>
+      <h2 class="subtitle">A simple blog with awesome content</h2>
+    </div>
+  </div>
+</section>
+
+<section class="projectlist mt-3 pt-3">
+  <div class="container">
+    <h2 class="title has-text-centered mt-3 mb-6">Recent projects</h2>
+    <div class="columns">
+      
+        
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  My Third Project
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  This is the third project on my site
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="/project_posts/third-project/" class="button is-fullwidth is-link card-footer-item">Read article</a>
+              </footer>
+            </div>
+          </div>
+          
+      
+        
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  My Second Project
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  This is the second project on my site
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="/project_posts/second-project/" class="button is-fullwidth is-link card-footer-item">Read article</a>
+              </footer>
+            </div>
+          </div>
+          
+      
+        
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  My First Project
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  This is the first project on my site
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="/project_posts/first-project/" class="button is-fullwidth is-link card-footer-item">Read article</a>
+              </footer>
+            </div>
+          </div>
+          
+      
+    </div>
+  </div>
+</section>
+  </main>
+
 </body>
+
 
 </html>
